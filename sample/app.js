@@ -1,6 +1,6 @@
 'use strict'
 
-angular.module('ncy-sample', ['ui.router.state', 'ui.bootstrap', 'ncy-angular-breadcrumb'])
+angular.module('ncy-sample', ['ui.router', 'ui.bootstrap', 'ncy-angular-breadcrumb'])
   .config(function($breadcrumbProvider) {
     $breadcrumbProvider.setOptions({
       prefixStateName: 'home',
@@ -139,10 +139,10 @@ angular.module('ncy-sample', ['ui.router.state', 'ui.bootstrap', 'ncy-angular-br
         newDate.setDate(date.getDate() + days);
         return newDate;
       }
-    }
+    };
   })
   .run(function($rootScope, $state, $breadcrumb) {
     $rootScope.isActive = function(stateName) {
       return $state.includes(stateName);
-    }
+    };
   });

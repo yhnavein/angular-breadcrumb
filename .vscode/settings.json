@@ -1,0 +1,17 @@
+{
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "editor.renderIndentGuides": true,
+  "editor.renderWhitespace": "boundary",
+  "files.eol": "\n",
+  "files.trimTrailingWhitespace": true,
+  "files.exclude": {
+    ".git": true,
+    "**/.DS_Store": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    ".tmp/**": true,
+    "dist/**": true
+  }
+}
